@@ -1,0 +1,509 @@
+header
+    position: fixed
+    height: 93px
+    width: 100%
+    background-color: #ffffff
+    z-index: 100
+    .menu
+        display: flex
+        justify-content: space-around
+        list-style-type: none
+        margin-top: 31px
+        &_link
+            color: #868686
+            font-size: 14px
+            font-weight: 400
+            text-align: center
+            text-transform: uppercase
+            transition: 0.6s all
+            padding: 12px 21px
+            text-decoration-line: none
+            &:hover
+                background-color: $main_color
+                color: #ffffff
+    &_img
+        margin-top: 22px
+
+.register
+    min-height: 589px
+    position: relative
+    background-color: #709dca
+    padding: 110px 0 0 0
+    &_header
+        color: #ffffff
+        text-align: center
+        font-size: 35px
+        font-weight: 400
+        text-transform: uppercase
+    &_subheader
+        color: #ffffff
+        text-align: center
+        font-family: "Open Sans Light"
+        font-weight: 300
+        font-size: 16px
+        margin-top: 10px
+    &_wrapper
+        display: flex
+        justify-content: center
+        margin-top: 33px
+        input
+            width: 281px
+            height: 46px
+            padding-left: 43px
+            background-color: #ffffff
+            border: none
+            color: #a9a9a9
+            font-size: 13px
+            font-weight: 400
+            margin-left: 10px
+            text-align: left
+            z-index: -1
+            &:nth-child(1)
+                margin-left: 0
+            &:focus
+                border: none
+
+        #form_name
+            background: url(../icons/form/1_bg.png) center center / cover no-repeat
+            z-index: 10
+        #form_email
+            background: url(../icons/form/2_bg.png) center center / cover no-repeat
+        #form_number
+            background: url(../icons/form/3_bg.png) center center / cover no-repeat
+    &_btn
+        width: 211px
+        height: 46px
+        background-color: #ffbb42
+        margin-left: 10px
+        border: none
+    &_img
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        top: 53%
+        &_wrap
+            display: flex
+            justify-content: center
+            span
+                width: 12px
+                height: 11px
+                margin-top: 22px
+                background-color: #ffffff
+                border: 2px solid #C4c4c4
+                margin-right: 7px
+                border-radius: 100%
+                transition: 0.8s all
+                &:hover
+                    border: 2px solid #1ca8dd
+                &:active
+                    border: 2px solid #1ca8dd
+
+.service
+    min-height: 923px
+    padding-bottom: 40px
+    &_title
+        color: #394b50
+        text-align: center
+        font-size: 30px
+        font-weight: 900
+        text-transform: uppercase
+        margin-top: 203px
+    &_subtitle
+        font-size: 16px
+        font-weight: 400
+        line-height: 22px
+        text-align: center
+        margin-top: 6px
+        margin-bottom: 20px
+    &_block
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        width: 100%
+        height: 55%
+    &_discr
+        width: 467px
+        text-align: right
+    &_up
+        color: #394b50
+        font-size: 16px
+        font-weight: 700
+        text-align: left
+        text-transform: uppercase
+    &_text
+        color: #7b7b7b
+        font-size: 13px
+        font-weight: 400
+        line-height: 22px
+        margin-top: 21px
+        text-align: left
+    &_round
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 60px
+        height: 60px
+
+.about_us
+    height: 623px
+    background: url(../img/bg/about_us_bg.png) center center / cover no-repeat
+    padding: 164px 0 174px 0
+    position: relative
+    &_title
+        color: #ffffff
+        font-size: 30px
+        font-weight: 400
+        text-transform: uppercase
+        text-align: left
+    &_text
+        color: #ffffff
+        font-size: 13px
+        width: 505px
+        font-weight: 400
+        line-height: 24px
+        text-align: left
+        margin-top: 28px
+    &_btn
+        width: 145px
+        height: 46px
+        border: 1px solid #ffffff
+        background-color: $main_color
+        color: #ffffff
+        margin-top: 33px
+        text-transform: uppercase
+        &:hover
+            background-color: #ffffff
+            border: none
+            color: #000000
+
+    &_discr
+        position: absolute
+        left: 55%
+
+.price
+    height: 898px
+    background-color: #e7edf3
+    padding: 137px 0 164px 0
+    &_title
+        color: #394b50
+        font-size: 30px
+        font-weight: 400
+        text-transform: uppercase
+        text-align: center
+    &_subtitle
+        font-size: 16px
+        font-weight: 400
+        text-align: center
+        color: #394b50
+        margin-top: 0
+    &_block
+        width: 391px
+        height: 441px
+        border: 1px solid #ccd5df
+        background-color: #ffffff
+        padding: 57px 0 48px 0
+        color: #818b95
+        text-align: center
+        margin-top: 30px
+        transition: 0.8s all
+        &:hover
+            width: 395px
+            height: 501px
+            background-color: #709dca
+            color: #ffffff
+            margin-top: 0
+            margin-bottom: 15px
+
+        &_title
+            font-size: 25px
+            font-weight: 300
+            text-align: center
+            text-transform: uppercase
+        &_cost
+            color: #ffbb42
+            font-size: 60px
+            font-weight: 700
+            line-height: normal
+            text-transform: uppercase
+            text-align: center
+        &_how
+            font-size: 19px
+            font-weight: 300
+            text-transform: uppercase
+            margin-top: -13px
+            margin-bottom: 15px
+        &_account, &_info, &_mb
+            font-size: 14px
+            font-weight: 400
+            text-align: center
+            text-transform: uppercase
+            padding: 14px
+            border-top: 1px solid #e2e9f0
+            &:before
+                content: ""
+                width: 329px
+                height: 1px
+                background-color: #8eb8e2
+        &_btn
+            width: 131px
+            height: 42px
+            background-color: $main_color
+            color: #ffffff
+            margin-top: 35px
+            text-transform: uppercase
+            border: none
+
+    &_wrap
+        display: flex
+        justify-content: center
+        margin-top: 79px
+
+.process
+    min-height: 858px
+    position: relative
+    padding: 155px 0 158px 0
+    &_title
+        color: #394b50
+        font-size: 30px
+        font-weight: 400
+        text-transform: uppercase
+        margin: 0
+        text-align: center
+    &_subtitle
+        font-size: 16px
+        font-weight: 400
+        text-align: center
+        color: #394b50
+        margin-top: 0
+    &_img
+        display: block
+        margin: 0 auto
+        margin-top: 112px
+    &_wrapper
+        margin-right: 87px
+    &_header
+        color: #394b50
+        font-size: 20px
+        font-weight: 700
+        text-align: center
+        text-transform: uppercase
+        margin-top: 102px
+    &_text
+        color: #7b7b7b
+        font-size: 13px
+        font-weight: 400
+        line-height: 22px
+        text-align: center
+        margin-top: 28px
+    &_btn
+        display: block
+        width: 165px
+        height: 46px
+        background-color: #ffbb42
+        color: #ffffff
+        margin-top: 91px
+        text-transform: uppercase
+        border: none
+        margin: 0 auto
+
+    .arrow_1
+        position: absolute
+        top: 20%
+        left: 62%
+    .arrow_3
+        position: absolute
+        top: 20%
+        left: 62%
+    .arrow_2
+        position: absolute
+        top: 45%
+        left: 62%
+
+.client
+    height: 908px
+    background-color: #ffc155
+    padding: 141px 0 160px 0
+    &_title
+        color: #394b50
+        font-size: 30px
+        font-weight: 400
+        text-transform: uppercase
+        margin: 0
+        text-align: center
+    &_subtitle
+        font-size: 16px
+        font-weight: 400
+        text-align: center
+        color: #394b50
+        margin-top: 0
+        margin-bottom: 58px
+
+    &_round
+        width: 557px
+        height: 241px
+        background-color: #ffffff
+        margin-top: 20px
+        display: flex
+        justify-content: space-around
+        padding: 43px 0 51px 0
+        &_text
+            color: #7b7b7b
+            font-size: 13px
+            font-weight: 400
+            line-height: 22px
+            text-align: left
+        &_autor
+            color: #f6772c
+            font-size: 14px
+            font-weight: 400
+            text-align: left
+            text-transform: uppercase
+            margin-top: 29px
+        &_discr
+            width: 356px
+        .img_wrapper
+            width: 121px
+            height: 121px
+
+.map
+    height: 940px
+    position: relative
+    padding: 154px 0 0 0
+    &_title
+        color: #000000
+        font-size: 30px
+        font-weight: 400
+        text-transform: uppercase
+        margin: 0
+        text-align: center
+    &_subtitle
+        font-size: 16px
+        font-weight: 400
+        text-align: center
+        color: #394b50
+        margin-top: 0
+    &_bg
+        position: absolute
+        z-index: -10
+    &_wrapper
+        display: flex
+        justify-content: center
+        margin-top: 33px
+        align-items: center
+
+    #form_name
+        width: 308px
+        height: 47px
+        background: url(../icons/form/1_bg.png) center center / cover no-repeat
+        z-index: 10
+    #form_email
+        width: 388px
+        height: 47px
+        background: url(../icons/form/2_bg.png) center center / cover no-repeat
+    input
+        background-color: #ffffff
+        border: none
+        color: #a9a9a9
+        font-size: 13px
+        font-weight: 400
+        margin-left: 10px
+        padding-left: 45px
+        text-align: left
+        z-index: -1
+        border: 1px solid #cbcbcb
+        background-color: #ffffff
+        &:nth-child(1)
+            margin-left: 0
+        &:focus
+            border: none
+
+    &_btn
+        width: 218px
+        height: 47px
+        background-color: #ffbb42
+        color: #ffffff
+        font-size: 14px
+        font-weight: 400
+        text-transform: uppercase
+
+    &_addres
+        display: flex
+        width: 279px
+        height: 292px
+        border-radius: 50%
+        border: 3px solid #ffffff
+        background-color: #394b50
+        margin: 0 auto
+        justify-content: center
+        margin-top: 93px
+        align-items: center
+        &_list
+            color: #aeb7ba
+            margin: 0
+            padding: 0
+            font-size: 13px
+            font-weight: 400
+            text-align: center
+            list-style-type: none
+            .yellow
+                color: #ffbb42
+            .white
+                color: #ffffff
+                font-size: 15px
+                font-weight: 700
+                margin-bottom: 20px
+    .devider
+        height: 4px
+        width: 100%
+        background-color: #e3e7ec
+        position: absolute
+        top: 100%
+
+.contact
+    height: 217px
+    padding: 65px 0 52px 0
+    .menu
+        list-style-type: none
+        display: flex
+        justify-content: space-around
+        &_link
+            color: #868686
+            font-size: 13px
+            font-weight: 400
+            text-align: center
+            text-transform: uppercase
+            transition: 0.6s all
+            padding: 10px 18px
+            text-decoration-line: none
+            &:hover
+                background-color: $main_color
+                color: #ffffff
+    &_phone
+        color: #394b50
+        font-size: 23px
+        font-weight: 400
+        text-align: center
+        display: flex
+        justify-content: center
+        .contact_icon
+            width: 16px
+            height: 17px
+            margin-top: 10px
+    &_icons_block
+        display: flex
+        justify-content: center
+        align-items: start
+        margin-top: 14px
+        .icons_item
+            margin: 8px
+
+.end
+    height: 49px
+    background-color: #709dca
+    padding: 17px 0 17px 0
+    &_text
+        color: #ffffff
+        font-size: 13px
+        font-weight: 400
+        line-height: 24px
+        text-align: center
